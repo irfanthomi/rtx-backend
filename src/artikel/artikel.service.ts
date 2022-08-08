@@ -15,8 +15,8 @@ export class ArtikelService {
   findAll() {
     return this.artikelRepository
       .createQueryBuilder("artikel")
-      .leftJoinAndSelect("artikel.penulis", "id_admin")
       .leftJoinAndSelect("artikel.kategori", "id_kategori")
+      .leftJoinAndSelect("artikel.penulis", "id_admin")
       .getMany();
   }
 
