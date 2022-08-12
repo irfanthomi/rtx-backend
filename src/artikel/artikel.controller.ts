@@ -3,7 +3,7 @@ import { ArtikelService } from './artikel.service';
 import { CreateArtikelDto } from './dto/create-artikel.dto';
 import { UpdateArtikelDto } from './dto/update-artikel.dto';
 
-@Controller('api/artikel')
+@Controller('/api/artikel')
 export class ArtikelController {
   constructor(private readonly artikelService: ArtikelService) { }
 
