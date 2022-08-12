@@ -3,7 +3,7 @@ import { KategoriService } from './kategori.service';
 import { CreateKategoriDto } from './dto/create-kategori.dto';
 import { UpdateKategoriDto } from './dto/update-kategori.dto';
 
-@Controller('kategori')
+@Controller('api/kategori')
 export class KategoriController {
   constructor(private readonly kategoriService: KategoriService) { }
 
